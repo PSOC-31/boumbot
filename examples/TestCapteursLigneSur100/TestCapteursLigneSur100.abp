@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="192 192 192" page-drawer="unibot" page-infullview="yes" page-name="unibot" page-width="1920">
+<PageBlocks>
+<Block genus-name="nouveau BoumBot()" id="90">
+<Location>
+<X>209</X>
+<Y>20</Y>
+</Location>
+<BeforeBlockId>87</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="91" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="91">
+<Location>
+<X>441</X>
+<Y>23</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="90" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="capteurGauche" id="198">
+<Label>     </Label>
+<Location>
+<X>226</X>
+<Y>376</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="94" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="199" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="199">
+<Location>
+<X>251</X>
+<Y>427</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="198" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="loop" id="89">
+<Location>
+<X>15</X>
+<Y>223</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="188" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_println" id="188">
+<Location>
+<X>154</X>
+<Y>231</Y>
+</Location>
+<BeforeBlockId>89</BeforeBlockId>
+<AfterBlockId>186</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="189" connector-kind="socket" connector-type="string" init-type="string" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_println_number" id="186">
+<Location>
+<X>154</X>
+<Y>261</Y>
+</Location>
+<BeforeBlockId>188</BeforeBlockId>
+<AfterBlockId>192</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="190" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_println" id="192">
+<Location>
+<X>154</X>
+<Y>343</Y>
+</Location>
+<BeforeBlockId>186</BeforeBlockId>
+<AfterBlockId>94</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="193" connector-kind="socket" connector-type="string" init-type="string" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_println_number" id="94">
+<Location>
+<X>154</X>
+<Y>373</Y>
+</Location>
+<BeforeBlockId>192</BeforeBlockId>
+<AfterBlockId>184</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="198" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_println_number" id="184">
+<Location>
+<X>154</X>
+<Y>455</Y>
+</Location>
+<BeforeBlockId>94</BeforeBlockId>
+<AfterBlockId>196</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="194" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="196">
+<Location>
+<X>154</X>
+<Y>491</Y>
+</Location>
+<BeforeBlockId>184</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="197" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="197">
+<Label>1000</Label>
+<Location>
+<X>280</X>
+<Y>494</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="196" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="capteurDroit" id="194">
+<Label>     </Label>
+<Location>
+<X>226</X>
+<Y>458</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="184" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="195" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="195">
+<Location>
+<X>251</X>
+<Y>463</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="194" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="string" id="193">
+<Label>Valeur capteurs Gauche et Droit (sur 100)</Label>
+<Location>
+<X>226</X>
+<Y>346</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="192" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="numSerie" id="190">
+<Label>     </Label>
+<Location>
+<X>226</X>
+<Y>264</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="186" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="191" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="191">
+<Location>
+<X>251</X>
+<Y>315</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="190" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="string" id="189">
+<Label>Numero de serie</Label>
+<Location>
+<X>226</X>
+<Y>234</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="188" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="setupData" id="88">
+<Location>
+<X>15</X>
+<Y>114</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="92" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="initialise" id="92">
+<Location>
+<X>132</X>
+<Y>122</Y>
+</Location>
+<BeforeBlockId>88</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="93" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="93">
+<Location>
+<X>157</X>
+<Y>173</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="92" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="declareData" id="87">
+<Location>
+<X>14</X>
+<Y>12</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="90" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
