@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="192 192 192" page-drawer="unibot" page-infullview="yes" page-name="unibot" page-width="1440">
+<PageBlocks>
+<Block genus-name="pasADroite0" id="488">
+<Location>
+<X>347</X>
+<Y>547</Y>
+</Location>
+<BeforeBlockId>244</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="489" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="489">
+<Location>
+<X>372</X>
+<Y>598</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="488" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="pasAGauche0" id="486">
+<Location>
+<X>255</X>
+<Y>375</Y>
+</Location>
+<BeforeBlockId>243</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="487" connector-kind="socket" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="487">
+<Location>
+<X>280</X>
+<Y>426</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="486" connector-kind="plug" connector-type="poly" init-type="poly" label="" label-editable="true" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="setupData" id="368">
+<Location>
+<X>32</X>
+<Y>134</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="105" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="initialise" id="105">
+<Location>
+<X>149</X>
+<Y>142</Y>
+</Location>
+<BeforeBlockId>368</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="106" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="106">
+<Location>
+<X>174</X>
+<Y>193</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="105" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="nouveau BoumBot()" id="103">
+<Location>
+<X>219</X>
+<Y>29</Y>
+</Location>
+<BeforeBlockId>117</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="104" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="104">
+<Location>
+<X>451</X>
+<Y>32</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="103" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="avance" id="249">
+<Location>
+<X>346</X>
+<Y>635</Y>
+</Location>
+<BeforeBlockId>244</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="250" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="250">
+<Location>
+<X>371</X>
+<Y>686</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="249" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ligneDroit" id="245">
+<Label>     </Label>
+<Location>
+<X>350</X>
+<Y>466</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="244" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="246" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="246">
+<Location>
+<X>375</X>
+<Y>517</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="245" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ifelse" id="244">
+<Location>
+<X>254</X>
+<Y>463</Y>
+</Location>
+<BeforeBlockId>243</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="245" connector-kind="socket" connector-type="boolean" init-type="boolean" label="si" position-type="single"/>
+<BlockConnector con-block-id="488" connector-kind="socket" connector-type="cmd" init-type="cmd" label="alors" position-type="single"/>
+<BlockConnector con-block-id="249" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sinon" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="ligneGauche" id="237">
+<Label>     </Label>
+<Location>
+<X>258</X>
+<Y>294</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="243" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="238" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="BoumBot" id="238">
+<Location>
+<X>283</X>
+<Y>345</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="237" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ifelse" id="243">
+<Location>
+<X>162</X>
+<Y>291</Y>
+</Location>
+<BeforeBlockId>100</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="237" connector-kind="socket" connector-type="boolean" init-type="boolean" label="si" position-type="single"/>
+<BlockConnector con-block-id="486" connector-kind="socket" connector-type="cmd" init-type="cmd" label="alors" position-type="single"/>
+<BlockConnector con-block-id="244" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sinon" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="loop" id="100">
+<Location>
+<X>23</X>
+<Y>283</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="243" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="declareData" id="117">
+<Location>
+<X>24</X>
+<Y>21</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="103" connector-kind="socket" connector-type="cmd" init-type="cmd" label="" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
