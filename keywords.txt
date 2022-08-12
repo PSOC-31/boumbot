@@ -1,0 +1,60 @@
+#######################################
+# Syntax Coloring Map For BoumBot
+#######################################
+# Bibliothéque Boum Bot
+# GrandTix
+# Philippe Martorell
+# Pour Planète Sciences
+# Version du 10/01/2020
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+BoumBot	KEYWORD1	
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+initialise	KEYWORD2
+arrete	KEYWORD2
+available	KEYWORD2
+tourneDroite	KEYWORD2
+tourneGauche	KEYWORD2
+pasADroite	KEYWORD2
+pasAGauche	KEYWORD2
+vitesseGauche	KEYWORD2
+vitesseDroite	KEYWORD2
+obstacle	KEYWORD2
+distance	KEYWORD2
+ligneGauche	KEYWORD2
+ligneDroit	KEYWORD2
+capteurGauche	KEYWORD2
+capteurDroit	KEYWORD2
+numSerie	KEYWORD2
+son KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+MemBoumBot	LITERAL1
+debutEeprom	LITERAL1
+numeroSerie	LITERAL1
+GaucheBlanc	LITERAL1
+GaucheNoir	LITERAL1
+DroitBlanc	LITERAL1
+DroitNoir	LITERAL1
+pinSG	LITERAL1
+pinSD	LITERAL1
+pinSortie	LITERAL1
+pinZeroG	LITERAL1
+pinZeroD	LITERAL1
+pinCapteurG	LITERAL1
+pinCapteurD	LITERAL1
+pinDistance	LITERAL1
+valLigne	LITERAL1
+dObst	LITERAL1
+
+
