@@ -1,0 +1,13 @@
+Reperage des pins
+
+Sorties Actuateurs
+pinSG = 9 ;        // ServoMoteur a rotation continue Gauche
+pinSD = 8 ;        // ServoMoteur a rotation continue Droit
+pinSortie = 12 ;   // Buzzer
+    
+Entrées capteurs analogiques
+     pinZeroG    = A0 ;     // Potentiometre reglage servo Gauche
+     pinZeroD    = A1 ;     // Potentiometre reglage servo Droit
+     pinCapteurG = A2 ;  // Capteur de ligne Gauche
+     pinCapteurD = A3 ;  // Capteur de ligne Droit
+     pinDistance = A4 ;  // Capteur de distance
